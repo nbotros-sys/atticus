@@ -766,425 +766,9 @@
 
   <!-- âââââââââââââââ SCHEDULE âââââââââââââââ -->
   <div class="page" id="page-schedule">
-    <div class="metrics-row cols-4">
-      <div class="metric-card">
-        <div class="metric-label">Total Appointments</div>
-        <div class="metric-value">24</div>
-        <div class="metric-sub">09:00 â 18:30</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-label">NHS Appointments</div>
-        <div class="metric-value">14</div>
-        <div class="metric-sub">58% of today's book</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-label">Private Appointments</div>
-        <div class="metric-value">10</div>
-        <div class="metric-sub">42% of today's book</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-label">Available Slots</div>
-        <div class="metric-value">3</div>
-        <div class="metric-delta delta-amber" style="color:var(--amber)">14:15, 15:30, 16:45</div>
-      </div>
-    </div>
+    <div style="padding:20px 24px 0"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><div><h2 style="font-size:20px;font-weight:700;color:var(--text)">Today's Diary</h2><p style="color:var(--muted);font-size:13px">Monday 7 April 2025 &middot; Elmwood Dental</p></div><div style="display:flex;gap:8px;font-size:11px;align-items:center"><span style="width:10px;height:10px;border-radius:2px;background:#2563eb;display:inline-block"></span><span style="color:var(--muted)">NHS</span><span style="width:10px;height:10px;border-radius:2px;background:#7c3aed;display:inline-block"></span><span style="color:var(--muted)">Private</span><span style="width:10px;height:10px;border-radius:2px;background:#16a34a;display:inline-block"></span><span style="color:var(--muted)">Hygiene</span><span style="width:10px;height:10px;border-radius:2px;background:#d97706;display:inline-block"></span><span style="color:var(--muted)">Ortho</span><span style="width:10px;height:10px;border-radius:2px;background:#dc2626;display:inline-block"></span><span style="color:var(--muted)">Gap</span></div></div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px"><div class="metric-card" style="padding:14px"><div class="metric-label">Total Appointments</div><div class="metric-value" style="font-size:26px">24</div><div class="metric-sub">4 surgeries &middot; 3 clinicians</div></div><div class="metric-card" style="padding:14px"><div class="metric-label">Scheduled Revenue</div><div class="metric-value" style="font-size:26px">&pound;4,210</div><div class="metric-sub" style="color:var(--green)">&#8593; 12% vs last Mon</div></div><div class="metric-card" style="padding:14px"><div class="metric-label">Available Slots</div><div class="metric-value" style="font-size:26px;color:#dc2626">3</div><div class="metric-sub">14:15 &middot; 15:30 &middot; 16:30</div></div><div class="metric-card" style="padding:14px"><div class="metric-label">Seat Utilisation</div><div class="metric-value" style="font-size:26px">82%</div><div class="metric-sub" style="color:var(--amber)">Target: 85%</div></div></div></div><div style="padding:0 24px 32px;overflow-x:auto"><div style="min-width:860px;background:white;border:1px solid var(--border);border-radius:12px;overflow:hidden"><div style="display:grid;grid-template-columns:64px repeat(4,1fr);background:var(--surface);border-bottom:2px solid var(--border)"><div></div><div style="padding:10px 8px;text-align:center;border-left:1px solid var(--border)"><div style="font-weight:700;font-size:12px">Surgery 1</div><div style="font-size:11px;color:var(--muted)">Dr P. Dubois</div><div style="font-size:11px;color:var(--green)">&pound;1,240 &middot; 8 appts</div></div><div style="padding:10px 8px;text-align:center;border-left:1px solid var(--border)"><div style="font-weight:700;font-size:12px">Surgery 2</div><div style="font-size:11px;color:var(--muted)">Dr A. Patel</div><div style="font-size:11px;color:var(--green)">&pound;2,180 &middot; 7 appts</div></div><div style="padding:10px 8px;text-align:center;border-left:1px solid var(--border)"><div style="font-weight:700;font-size:12px">Surgery 3</div><div style="font-size:11px;color:var(--muted)">Dr J. McAllister</div><div style="font-size:11px;color:var(--green)">&pound;690 &middot; 5 appts</div></div><div style="padding:10px 8px;text-align:center;border-left:1px solid var(--border)"><div style="font-weight:700;font-size:12px">Hygiene</div><div style="font-size:11px;color:var(--muted)">Rachel Clarke</div><div style="font-size:11px;color:var(--green)">&pound;380 &middot; 4 appts</div></div></div><div id="sched-diary"></div></div></div>
 
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">Today's Full Schedule â Monday 7 April 2025</span>
-        <div style="display:flex;gap:10px;align-items:center;">
-          <span style="display:flex;align-items:center;gap:5px;font-size:12px;"><span style="width:10px;height:10px;border-radius:2px;background:#3b82f6;display:inline-block;"></span>NHS</span>
-          <span style="display:flex;align-items:center;gap:5px;font-size:12px;"><span style="width:10px;height:10px;border-radius:2px;background:#8b5cf6;display:inline-block;"></span>Private</span>
-          <span style="display:flex;align-items:center;gap:5px;font-size:12px;"><span style="width:10px;height:10px;border-radius:2px;background:#10b981;display:inline-block;"></span>Hygiene</span>
-          <span style="display:flex;align-items:center;gap:5px;font-size:12px;"><span style="width:10px;height:10px;border-radius:2px;background:#f59e0b;display:inline-block;"></span>Ortho</span>
-        </div>
-      </div>
-      <div class="card-body">
-        <div id="schedule-list"><div class="schedule-slot">
-      <div class="slot-time">09:00</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs Joanna KamiÅska</div>
-          <div class="slot-treatment">NHS Check-up &amp; Scale</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£23 (1 UDA)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">09:00</div>
-      <div class="slot-content">
-        <div class="slot-bar hygiene"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Miss Priya Shah</div>
-          <div class="slot-treatment">Hygiene â Airflow + Polish</div>
-          <div class="slot-clinician">Rachel Clarke</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">45 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£95</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">09:10</div>
-      <div class="slot-content">
-        <div class="slot-bar ortho"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr Ethan Briggs</div>
-          <div class="slot-treatment">Orthodontic review â fixed brace</div>
-          <div class="slot-clinician">Dr Kowalski</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">20 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£65</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">09:30</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr Daniel Osei</div>
-          <div class="slot-treatment">Private composite restoration Ã2</div>
-          <div class="slot-clinician">Dr Patel</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">60 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£340</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">09:50</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs A. Kowalczyk</div>
-          <div class="slot-treatment">NHS extraction (surgical)</div>
-          <div class="slot-clinician">Dr McAllister</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">40 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£46 (2 UDAs)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">10:00</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr T. Nguyen</div>
-          <div class="slot-treatment">NHS check-up (recall)</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£23 (1 UDA)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">10:00</div>
-      <div class="slot-content">
-        <div class="slot-bar hygiene"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Ms B. SzabÃ³</div>
-          <div class="slot-treatment">Hygiene â full perio assessment</div>
-          <div class="slot-clinician">Rachel Clarke</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">60 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£125</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">10:30</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs E. Okafor</div>
-          <div class="slot-treatment">Crown prep â upper molar (private)</div>
-          <div class="slot-clinician">Dr Patel</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">90 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£680</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">10:30</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr S. Petrov</div>
-          <div class="slot-treatment">NHS composite filling Ã1</div>
-          <div class="slot-clinician">Dr Kowalski</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£63 (2 UDAs)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">11:00</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs L. Fernandes</div>
-          <div class="slot-treatment">Root canal â stage 2 (private)</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">75 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£420</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">11:40</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr F. Andriessen</div>
-          <div class="slot-treatment">Implant review + impressions</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">45 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£180</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">12:00</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Miss R. Adesola</div>
-          <div class="slot-treatment">Sealants + fluoride (paediatric NHS)</div>
-          <div class="slot-clinician">Taiwo Oladipo</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£63 (2 UDAs)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">12:30</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr G. Papadopoulos</div>
-          <div class="slot-treatment">Bridge prep Ã3 units (private)</div>
-          <div class="slot-clinician">Dr McAllister</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">90 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£840</span>
-          
-        </div>
-      </div></div><div class="schedule-slot" style="background: rgb(249, 250, 251);">
-      <div class="slot-time">13:00</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="color:var(--muted);font-style:italic;font-weight:400">â Lunch break â</div>
-          
-          
-        </div>
-        <div class="slot-meta">
-          
-          
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">13:30</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs S. Nwosu</div>
-          <div class="slot-treatment">Invisalign check â month 4</div>
-          <div class="slot-clinician">Dr Kowalski</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">20 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£80</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">14:00</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr A. Ibrahim</div>
-          <div class="slot-treatment">NHS check-up + radiographs</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£43 (2 UDAs)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">14:00</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Miss K. Yamamoto</div>
-          <div class="slot-treatment">Hygiene + whitening top-up</div>
-          <div class="slot-clinician">Rachel Clarke</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">60 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£160</span>
-          
-        </div>
-      </div></div><div class="schedule-slot" style="background: rgb(255, 251, 235);">
-      <div class="slot-time">14:15</div>
-      <div class="slot-content">
-        <div class="slot-bar hygiene"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="color:var(--muted);font-style:italic;font-weight:400">â AVAILABLE SLOT â</div>
-          <div class="slot-treatment">Chair 3 open â call short-notice list</div>
-          
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">75 min</span>
-          
-          <span style="font-size:11px;color:var(--amber);font-weight:600">~Â£95 est.</span>
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">15:00</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr C. Rosenberg</div>
-          <div class="slot-treatment">Implant consult (new patient)</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">45 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£120 (consult)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot" style="background: rgb(255, 251, 235);">
-      <div class="slot-time">15:30</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="color:var(--muted);font-style:italic;font-weight:400">â AVAILABLE SLOT â</div>
-          <div class="slot-treatment">Chair 2 open</div>
-          
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          
-          <span style="font-size:11px;color:var(--amber);font-weight:600"></span>
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">15:45</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs H. Obi</div>
-          <div class="slot-treatment">Veneer consult Ã4 (new patient)</div>
-          <div class="slot-clinician">Dr Patel</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£90 (consult)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">16:00</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr D. O'Brien</div>
-          <div class="slot-treatment">NHS denture review + reline</div>
-          <div class="slot-clinician">Dr McAllister</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">45 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£243 (3 UDAs)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">16:30</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Ms F. Kasprzak</div>
-          <div class="slot-treatment">NHS composite Ã2 surfaces</div>
-          <div class="slot-clinician">Dr Kowalski</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">45 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£63 (2 UDAs)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot" style="background: rgb(255, 251, 235);">
-      <div class="slot-time">16:45</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="color:var(--muted);font-style:italic;font-weight:400">â AVAILABLE SLOT â</div>
-          <div class="slot-treatment">Chair 1 open</div>
-          
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          
-          <span style="font-size:11px;color:var(--amber);font-weight:600"></span>
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">17:00</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr P. Johansson</div>
-          <div class="slot-treatment">Crown fit â upper premolar (private)</div>
-          <div class="slot-clinician">Dr Dubois</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">45 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£380</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">17:30</div>
-      <div class="slot-content">
-        <div class="slot-bar nhs"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mrs N. Al-Rashid</div>
-          <div class="slot-treatment">NHS check-up + OHI (recall)</div>
-          <div class="slot-clinician">Dr Patel</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£23 (1 UDA)</span>
-          
-        </div>
-      </div></div><div class="schedule-slot">
-      <div class="slot-time">18:00</div>
-      <div class="slot-content">
-        <div class="slot-bar private"></div>
-        <div class="slot-info">
-          <div class="slot-patient" style="">Mr K. Okonkwo</div>
-          <div class="slot-treatment">Retainer fit + review</div>
-          <div class="slot-clinician">Dr Kowalski</div>
-        </div>
-        <div class="slot-meta">
-          <span class="badge badge-grey">30 min</span>
-          <span style="font-size:12px;font-weight:600;color:var(--text)">Â£120</span>
-          
-        </div>
-      </div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- âââââââââââââââ REVENUE âââââââââââââââ -->
-  <div class="page" id="page-revenue">
+    <div class="page" id="page-revenue">
     <div class="metrics-row cols-4">
       <div class="metric-card">
         <div class="metric-label">MTD Revenue</div>
@@ -2206,4 +1790,46 @@ buildRevenueChart();
         </svg>
         <span id="claude-static-close-tooltip" style="position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%); padding: 6px 12px; background: #30302E; color: #FAF9F5; border-radius: 6px; font-size: 12px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.2s; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Dismiss</span>
       </button>
-    </div></body></html>
+    </div>
+    <script>
+    (function(){
+      var rows=[
+        {t:'09:00',h:true,s1:{n:'Mrs J. Kaminska',x:'NHS',d:'Check-up & Scale',c:'#2563eb'},s2:{n:'Mr D. Osei',x:'Private',d:'Composite x2',c:'#7c3aed'},s3:{n:'Mrs A. Kowalczyk',x:'NHS',d:'Extraction surgical',c:'#2563eb'},hy:{n:'Miss P. Shah',x:'Hygiene',d:'Airflow + Polish',c:'#16a34a'}},
+        {t:'09:30',h:false,s1:{n:'Mr T. Nguyen',x:'NHS',d:'Check-up recall',c:'#2563eb'},s2:null,s3:null,hy:null},
+        {t:'10:00',h:true,s1:{n:'Mrs L. Fernandes',x:'Private',d:'Root canal stage 2',c:'#7c3aed'},s2:{n:'Mrs E. Okafor',x:'Private',d:'Crown prep - molar',c:'#7c3aed'},s3:{n:'Mr S. Petrov',x:'NHS',d:'Composite filling',c:'#2563eb'},hy:{n:'Ms B. Szabo',x:'Hygiene',d:'Perio assessment',c:'#16a34a'}},
+        {t:'10:30',h:false,s1:null,s2:null,s3:{n:'Mr F. Andriessen',x:'Private',d:'Implant review',c:'#7c3aed'},hy:null},
+        {t:'11:00',h:true,s1:{n:'Mrs O. Abramova',x:'NHS',d:'Band 1 check-up',c:'#2563eb'},s2:{n:'Mr C. Rosenberg',x:'Private',d:'Implant consult',c:'#7c3aed'},s3:null,hy:{n:'Mr R. Ibrahim',x:'NHS',d:'Scale & Polish',c:'#16a34a'}},
+        {t:'11:30',h:false,s1:{n:'Mr E. Briggs',x:'Ortho',d:'Fixed brace review',c:'#d97706'},s2:{n:'Mrs H. Obi',x:'Private',d:'Veneer x4 consult',c:'#7c3aed'},s3:{n:'Ms D. Kasprzak',x:'Private',d:'Clear aligner',c:'#7c3aed'},hy:null},
+        {t:'12:00',h:true,lunch:true},
+        {t:'13:00',h:true,s1:{n:'Mr G. Papadopoulos',x:'Private',d:'Bridge x3',c:'#7c3aed'},s2:{n:'Ms N. Murphy',x:'Private',d:'Invisalign month 3',c:'#7c3aed'},s3:{n:'Mrs S. Nwosu',x:'NHS',d:'Extraction',c:'#2563eb'},hy:{n:'Mr A. Petrov',x:'Hygiene',d:'Implant care',c:'#16a34a'}},
+        {t:'13:30',h:false,s1:null,s2:{n:'Mr P. Johansson',x:'Private',d:'Crown fit',c:'#7c3aed'},s3:null,hy:null},
+        {t:'14:00',h:true,s1:{n:'Mrs F. Adeyemi',x:'NHS',d:'Band 2 fillings',c:'#2563eb'},s2:'GAP',s3:{n:'Mr E. Briggs',x:'Ortho',d:'Ortho adjust',c:'#d97706'},hy:null},
+        {t:'14:30',h:false,s1:{n:'Ms L. Park',x:'Private',d:'Whitening review',c:'#7c3aed'},s2:null,s3:null,hy:{n:'Mrs C. Okonkwo',x:'Hygiene',d:'Scale & Polish',c:'#16a34a'}},
+        {t:'15:00',h:true,s1:{n:'Mr R. Hassan',x:'NHS',d:'Check-up',c:'#2563eb'},s2:null,s3:null,hy:null},
+        {t:'15:30',h:false,s1:{n:'Mrs K. Walsh',x:'Private',d:'Implant stage 2',c:'#7c3aed'},s2:'GAP',s3:null,hy:null},
+        {t:'16:00',h:true,s1:null,s2:{n:'Mr T. Nguyen',x:'NHS',d:'X-ray review',c:'#2563eb'},s3:null,hy:null},
+        {t:'16:30',h:false,s1:null,s2:'GAP',s3:null,hy:null}
+      ];
+      function cell(a,t){
+        var bl='border-left:1px solid var(--border);';
+        if(!a)return '<div style="'+bl+'padding:4px 6px;min-height:52px"></div>';
+        if(a==='GAP')return '<div style="'+bl+'padding:4px 6px" onclick="(function(){var b=document.querySelector('[data-page=ask]');if(b)b.click();setTimeout(function(){var i=document.querySelector('.chat-input');if(i){i.value='Fill the '+t+' gap';i.dispatchEvent(new Event('input',{bubbles:true}));}},400);})()"><div style="background:#fef2f2;border:2px dashed #dc2626;border-radius:6px;padding:8px;cursor:pointer;min-height:44px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:11px;font-weight:700;color:#dc2626">&#9888; GAP</div><div style="font-size:11px;color:#dc2626">Fill this slot &#8594;</div></div></div>';
+        var bg=a.x==='NHS'?'#dbeafe':a.x==='Private'?'#ede9fe':a.x==='Hygiene'?'#dcfce7':'#fef3c7';
+        var tc=a.x==='NHS'?'#1d4ed8':a.x==='Private'?'#6d28d9':a.x==='Hygiene'?'#15803d':'#92400e';
+        return '<div style="'+bl+'padding:4px 6px"><div style="background:white;border:1px solid var(--border);border-left:3px solid '+a.c+';border-radius:6px;padding:7px 9px;min-height:44px"><div style="font-size:12px;font-weight:600;color:var(--text)">'+a.n+'</div><div style="font-size:11px;color:var(--muted);margin-top:1px">'+a.d+'</div><span style="font-size:10px;font-weight:600;padding:1px 5px;border-radius:8px;background:'+bg+';color:'+tc+';margin-top:2px;display:inline-block">'+a.x+'</span></div></div>';
+      }
+      var out='';
+      rows.forEach(function(r){
+        var bt=r.h?'1px solid var(--border)':'1px solid #f0f0f0';
+        var ts='font-size:'+(r.h?'11px':'10px')+';font-weight:'+(r.h?'600':'400')+';color:'+(r.h?'var(--text)':'var(--muted)');
+        if(r.lunch){
+          out+='<div style="display:grid;grid-template-columns:64px 1fr;border-top:'+bt+'"><div style="padding:8px 6px;display:flex;align-items:center;justify-content:flex-end"><span style="'+ts+'">'+r.t+'</span></div><div style="border-left:1px solid var(--border);background:#f8f9fa;display:flex;align-items:center;justify-content:center;padding:14px"><span style="font-size:12px;color:var(--muted);font-weight:600">&#9749; LUNCH 12:00 &ndash; 13:00</span></div></div>';
+        } else {
+          out+='<div style="display:grid;grid-template-columns:64px repeat(4,1fr);border-top:'+bt+'"><div style="padding:'+(r.h?'8':'4')+'px 6px;display:flex;align-items:flex-start;justify-content:flex-end"><span style="'+ts+'">'+r.t+'</span></div>'+cell(r.s1,r.t)+cell(r.s2,r.t)+cell(r.s3,r.t)+cell(r.hy,r.t)+'</div>';
+        }
+      });
+      function render(){var el=document.getElementById('sched-diary');if(el)el.innerHTML=out;}
+      if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',render);}else{render();}
+    })();
+    </script>
+</body></html>
