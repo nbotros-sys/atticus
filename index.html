@@ -2206,4 +2206,34 @@ buildRevenueChart();
         </svg>
         <span id="claude-static-close-tooltip" style="position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%); padding: 6px 12px; background: #30302E; color: #FAF9F5; border-radius: 6px; font-size: 12px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.2s; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Dismiss</span>
       </button>
-    </div></body></html>
+    </div>
+<script id="gap-fill-timer-feature">
+(function(){
+var WAITLIST=[{name:'Marcus Reid',phone:'07700 900 142',treatment:'Band 2 NHS check-up',time:'14:15',clinician:'Dr Patel',surgery:'Surgery 2'},{name:'Sarah Okonkwo',phone:'07700 900 283',treatment:'Band 1 NHS exam',time:'14:15',clinician:'Dr Patel',surgery:'Surgery 2'},{name:'James Thornton',phone:'07700 900 371',treatment:'Private consult',time:'14:15',clinician:'Dr Patel',surgery:'Surgery 2'},{name:'Priya Mehta',phone:'07700 900 445',treatment:'Hygiene appointment',time:'14:15',clinician:'Dr Patel',surgery:'Surgery 2'}];
+var idx=0,timer=null,SECS=900;
+function pad(n){return n<10?'0'+n:''+n;}
+function deadline(s){var d=new Date();d.setSeconds(d.getSeconds()+s);var h=d.getHours(),m=d.getMinutes(),ap=h>=12?'pm':'am';h=h%12||12;return h+':'+pad(m)+ap;}
+function clearT(){if(timer){clearInterval(timer);timer=null;}var o=document.getElementById('gf-block');if(o)o.remove();}
+function chat(){return document.getElementById('chat-messages');}
+function msg(t){var c=chat();if(!c)return;var d=document.createElement('div');d.style.cssText='margin:8px 0;padding:10px 14px;border-radius:10px;font-size:14px;line-height:1.5;max-width:85%;background:#1e293b;color:#e2e8f0;';d.innerHTML=t;c.appendChild(d);d.scrollIntoView({behavior:'smooth',block:'end'});}
+function render(p,s){
+clearT();
+var dl=deadline(s);
+var sms='Hi '+p.name.split(' ')[0]+', Elmwood Dental here. We have a cancellation at '+p.time+' with '+p.clinician+'. Please reply YES by '+dl+' to secure this slot.';
+var b=document.createElement('div');b.id='gf-block';
+b.style.cssText='margin:14px 0;background:#1a1a2e;border:1.5px solid #4f46e5;border-radius:12px;padding:16px 18px;font-family:inherit;';
+b.innerHTML='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="color:#a5b4fc;font-size:12px;font-weight:600;text-transform:uppercase;">Gap Fill - Patient '+(idx+1)+' of '+WAITLIST.length+'</span><span id="gf-cd" style="background:#312e81;color:#e0e7ff;font-size:13px;font-weight:700;padding:4px 12px;border-radius:20px;">15:00</span></div><div style="color:#f1f5f9;font-size:14px;font-weight:600;margin-bottom:2px;">'+p.name+' <span style="color:#94a3b8;font-weight:400;font-size:13px;">'+p.phone+'</span></div><div style="color:#94a3b8;font-size:12px;margin-bottom:10px;">'+p.treatment+' - '+p.time+' - '+p.clinician+' - '+p.surgery+'</div><div style="background:#0f172a;border-radius:8px;padding:10px 12px;margin-bottom:12px;"><div style="color:#64748b;font-size:11px;font-weight:600;text-transform:uppercase;margin-bottom:4px;">SMS Draft</div><div style="color:#cbd5e1;font-size:13px;line-height:1.5;">'+sms+'</div></div><div style="display:flex;gap:10px;"><button onclick="window.gfYes()" style="flex:1;background:#4f46e5;color:#fff;border:none;border-radius:8px;padding:9px 0;font-size:13px;font-weight:600;cursor:pointer;">YES - Send and Book</button><button onclick="window.gfSkip()" style="flex:1;background:#1e293b;color:#94a3b8;border:1.5px solid #334155;border-radius:8px;padding:9px 0;font-size:13px;font-weight:600;cursor:pointer;">Skip to next patient</button></div><div style="margin-top:8px;color:#475569;font-size:11px;text-align:center;">Expires at '+dl+' - auto-moves to next patient</div>';
+var c=chat();if(c){c.appendChild(b);b.scrollIntoView({behavior:'smooth',block:'end'});}
+var rem=s;timer=setInterval(function(){rem--;var el=document.getElementById('gf-cd');if(el){var m=Math.floor(rem/60),sc=rem%60;el.textContent=pad(m)+':'+pad(sc);if(rem<=60)el.style.background='#7f1d1d';if(rem<=10)el.style.color='#fca5a5';}if(rem<=0)window.gfTimeout();},1000);
+}
+window.gfYes=function(){clearT();var p=WAITLIST[idx];msg('Booked. SMS sent to '+p.name+' at '+p.phone+'. Confirmed '+p.time+' with '+p.clinician+' in '+p.surgery+'.');};
+window.gfSkip=function(){clearT();idx++;if(idx>=WAITLIST.length){msg('All patients contacted. Slot remains unfilled.');return;}msg('Skipped. Trying '+WAITLIST[idx].name+'...');setTimeout(function(){render(WAITLIST[idx],SECS);},600);};
+window.gfTimeout=function(){clearT();var prev=WAITLIST[idx];idx++;if(idx>=WAITLIST.length){msg('No response from any patient. Slot unfilled.');return;}msg('No response from '+prev.name+' after 15 min. Trying '+WAITLIST[idx].name+'...');setTimeout(function(){render(WAITLIST[idx],SECS);},600);};
+var _o=Element.prototype.appendChild;
+Element.prototype.appendChild=function(child){
+var r=_o.call(this,child);
+try{if(this.id==='chat-messages'&&child.className&&child.className.includes&&child.className.includes('assistant')){var t=(child.innerText||child.textContent||'').toLowerCase();if((t.includes('marcus')||t.includes('gap')||t.includes('waitlist'))&&(t.includes('sms')||t.includes('yes')||t.includes('book'))&&!document.getElementById('gf-block')){idx=0;setTimeout(function(){render(WAITLIST[0],SECS);},500);}}  }catch(e){}
+return r;};
+})();
+</script>
+</body></html>
